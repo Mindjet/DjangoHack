@@ -1,0 +1,6 @@
+.vscode/
+*.pyc
+*.pyo
+db.sqlite3
+nohup.out
+.idea/
