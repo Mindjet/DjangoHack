@@ -1,0 +1,9 @@
+		~ DjangoHack ~
+
+Just a simple approach to mix up Django and React.
+
+Django with rest_framework to play as RESTful API server.
+
+React with Parcel to render frontend user interface.
+
+
