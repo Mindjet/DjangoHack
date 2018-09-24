@@ -46,9 +46,27 @@ export class Hero extends React.Component {
 }
 
 export class HeroList extends React.Component {
+
+    constructor() {
+        super()
+        this.state = {
+            heroes: []
+        }
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:8000/heroes")
+            .then(res => res.json())
+            .then(res => {
+                this.setState({
+                    heroes: res
+                })
+            });
+    }
+
     render() {
         return (
-            heroes.map((item, index) => <Hero key={index} data={item} />)
+            this.state.heroes.map((item, index) => <Hero key={index} data={item} />)
         )
     }
 }
