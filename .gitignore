@@ -4,3 +4,6 @@
 db.sqlite3
 nohup.out
 .idea/
+Lib/
+Include/
+Scripts/
