@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Hero
 
 
 class HeroInList(admin.ModelAdmin):
-    list_display = ('name', 'position')
+    list_display = ('id', 'name', 'position', 'affiliation', 'base_of_operation')
